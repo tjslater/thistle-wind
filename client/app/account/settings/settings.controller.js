@@ -1,5 +1,6 @@
 'use strict';
 
+<<<<<<< HEAD
 class SettingsController {
   constructor(Auth) {
     this.errors = {};
@@ -27,3 +28,24 @@ class SettingsController {
 
 angular.module('thistleWindApp')
   .controller('SettingsController', SettingsController);
+=======
+angular.module('thistleWindApp')
+  .controller('SettingsCtrl', function ($scope, User, Auth) {
+    $scope.errors = {};
+
+    $scope.changePassword = function(form) {
+      $scope.submitted = true;
+      if(form.$valid) {
+        Auth.changePassword( $scope.user.oldPassword, $scope.user.newPassword )
+        .then( function() {
+          $scope.message = 'Password successfully changed.';
+        })
+        .catch( function() {
+          form.password.$setValidity('mongoose', false);
+          $scope.errors.other = 'Incorrect password';
+          $scope.message = '';
+        });
+      }
+		};
+  });
+>>>>>>> 31e58baab6aedbca954ad55e172163092ab52889

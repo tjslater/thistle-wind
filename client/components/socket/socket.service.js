@@ -3,6 +3,10 @@
 
 angular.module('thistleWindApp')
   .factory('socket', function(socketFactory) {
+<<<<<<< HEAD
+=======
+
+>>>>>>> 31e58baab6aedbca954ad55e172163092ab52889
     // socket.io now auto-configures its connection when we ommit a connection url
     var ioSocket = io('', {
       // Send auth token on connection, you will need to DI the Auth service above
@@ -10,10 +14,19 @@ angular.module('thistleWindApp')
       path: '/socket.io-client'
     });
 
+<<<<<<< HEAD
     var socket = socketFactory({ ioSocket });
 
     return {
       socket,
+=======
+    var socket = socketFactory({
+      ioSocket: ioSocket
+    });
+
+    return {
+      socket: socket,
+>>>>>>> 31e58baab6aedbca954ad55e172163092ab52889
 
       /**
        * Register listeners to sync an array with updates on a model
@@ -25,7 +38,11 @@ angular.module('thistleWindApp')
        * @param {Array} array
        * @param {Function} cb
        */
+<<<<<<< HEAD
       syncUpdates(modelName, array, cb) {
+=======
+      syncUpdates: function (modelName, array, cb) {
+>>>>>>> 31e58baab6aedbca954ad55e172163092ab52889
         cb = cb || angular.noop;
 
         /**
@@ -63,7 +80,11 @@ angular.module('thistleWindApp')
        *
        * @param modelName
        */
+<<<<<<< HEAD
       unsyncUpdates(modelName) {
+=======
+      unsyncUpdates: function (modelName) {
+>>>>>>> 31e58baab6aedbca954ad55e172163092ab52889
         socket.removeAllListeners(modelName + ':save');
         socket.removeAllListeners(modelName + ':remove');
       }

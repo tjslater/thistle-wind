@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # thistle-wind
 
 This project was generated with the [Angular Full-Stack Generator](https://github.com/DaftMonk/generator-angular-fullstack) version 3.3.0.
@@ -30,3 +31,7 @@ Run `grunt build` for building and `grunt serve` for preview.
 ## Testing
 
 Running `npm test` will run the unit tests with karma.
+=======
+# thistle-wind
+>>>>>>> 31e58baab6aedbca954ad55e172163092ab52889
+# thistle-wind

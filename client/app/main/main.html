@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+=======
+<div ng-include="'components/navbar/navbar.html'"></div>
+
+>>>>>>> 31e58baab6aedbca954ad55e172163092ab52889
 <header class="hero-unit" id="banner">
   <div class="container">
     <h1>'Allo, 'Allo!</h1>
@@ -10,8 +15,13 @@
   <div class="row">
     <div class="col-lg-12">
       <h1 class="page-header">Features:</h1>
+<<<<<<< HEAD
       <ul class="nav nav-tabs nav-stacked col-md-4 col-lg-4 col-sm-6" ng-repeat="thing in main.awesomeThings">
         <li><a href="#" tooltip="{{thing.info}}">{{thing.name}}<button type="button" class="close" ng-click="main.deleteThing(thing)">&times;</button></a></li>
+=======
+      <ul class="nav nav-tabs nav-stacked col-md-4 col-lg-4 col-sm-6" ng-repeat="thing in awesomeThings">
+        <li><a href="#" tooltip="{{thing.info}}">{{thing.name}}<button type="button" class="close" ng-click="deleteThing(thing)">&times;</button></a></li>
+>>>>>>> 31e58baab6aedbca954ad55e172163092ab52889
       </ul>
     </div>
   </div>
@@ -19,10 +29,27 @@
   <form class="thing-form">
     <label>Syncs in realtime across clients</label>
     <p class="input-group">
+<<<<<<< HEAD
       <input type="text" class="form-control" placeholder="Add a new thing here." ng-model="main.newThing">
       <span class="input-group-btn">
         <button type="submit" class="btn btn-primary" ng-click="main.addThing()">Add New</button>
+=======
+      <input type="text" class="form-control" placeholder="Add a new thing here." ng-model="newThing">
+      <span class="input-group-btn">
+        <button type="submit" class="btn btn-primary" ng-click="addThing()">Add New</button>
+>>>>>>> 31e58baab6aedbca954ad55e172163092ab52889
       </span>
     </p>
   </form>
 </div>
+<<<<<<< HEAD
+=======
+
+<footer class="footer">
+  <div class="container">
+      <p>Angular Fullstack v2.1.1 |
+        <a href="https://twitter.com/tyhenkel">@tyhenkel</a> |
+         <a href="https://github.com/DaftMonk/generator-angular-fullstack/issues?state=open">Issues</a></p>
+  </div>
+</footer>
+>>>>>>> 31e58baab6aedbca954ad55e172163092ab52889

@@ -1,15 +1,26 @@
 'use strict';
 
 angular.module('thistleWindApp')
+<<<<<<< HEAD
   .factory('Modal', function($rootScope, $modal) {
+=======
+  .factory('Modal', function ($rootScope, $modal) {
+>>>>>>> 31e58baab6aedbca954ad55e172163092ab52889
     /**
      * Opens a modal
      * @param  {Object} scope      - an object to be merged with modal's scope
      * @param  {String} modalClass - (optional) class(es) to be applied to the modal
      * @return {Object}            - the instance $modal.open() returns
      */
+<<<<<<< HEAD
     function openModal(scope = {}, modalClass = 'modal-default') {
       var modalScope = $rootScope.$new();
+=======
+    function openModal(scope, modalClass) {
+      var modalScope = $rootScope.$new();
+      scope = scope || {};
+      modalClass = modalClass || 'modal-default';
+>>>>>>> 31e58baab6aedbca954ad55e172163092ab52889
 
       angular.extend(modalScope, scope);
 
@@ -31,7 +42,13 @@ angular.module('thistleWindApp')
          * @param  {Function} del - callback, ran when delete is confirmed
          * @return {Function}     - the function to open the modal (ex. myModalFn)
          */
+<<<<<<< HEAD
         delete(del = angular.noop) {
+=======
+        delete: function(del) {
+          del = del || angular.noop;
+
+>>>>>>> 31e58baab6aedbca954ad55e172163092ab52889
           /**
            * Open a delete confirmation modal
            * @param  {String} name   - name or info to show on modal

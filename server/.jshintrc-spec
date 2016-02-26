@@ -1,15 +1,22 @@
 {
   "extends": ".jshintrc",
   "globals": {
+<<<<<<< HEAD
     "jasmine": true,
+=======
+>>>>>>> 31e58baab6aedbca954ad55e172163092ab52889
     "describe": true,
     "it": true,
     "before": true,
     "beforeEach": true,
     "after": true,
+<<<<<<< HEAD
     "afterEach": true,
     "expect": true,
     "assert": true,
     "sinon": true
+=======
+    "afterEach": true
+>>>>>>> 31e58baab6aedbca954ad55e172163092ab52889
   }
 }

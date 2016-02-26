@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * text=auto
 
 # These files are text and should be normalized (Convert crlf => lf)
@@ -41,3 +42,6 @@
 *.PDF  diff=astextplain
 *.rtf  diff=astextplain
 *.RTF  diff=astextplain
+=======
+* text eol=lf
+>>>>>>> 31e58baab6aedbca954ad55e172163092ab52889
