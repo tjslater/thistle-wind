@@ -1,7 +1,10 @@
 {
   "generator-angular-fullstack": {
+<<<<<<< HEAD
     "generatorVersion": "3.3.0",
     "endpointDirectory": "server/api/",
+=======
+>>>>>>> 31e58baab6aedbca954ad55e172163092ab52889
     "insertRoutes": true,
     "registerRoutesFile": "server/routes.js",
     "routesNeedle": "// Insert routes below",
@@ -10,18 +13,25 @@
     "insertSockets": true,
     "registerSocketsFile": "server/config/socketio.js",
     "socketsNeedle": "// Insert sockets below",
+<<<<<<< HEAD
     "insertModels": true,
     "registerModelsFile": "server/sqldb/index.js",
     "modelsNeedle": "// Insert models below",
     "filters": {
       "js": true,
       "babel": true,
+=======
+    "filters": {
+      "babel": false,
+      "js": true,
+>>>>>>> 31e58baab6aedbca954ad55e172163092ab52889
       "html": true,
       "sass": true,
       "uirouter": true,
       "bootstrap": true,
       "uibootstrap": true,
       "socketio": true,
+<<<<<<< HEAD
       "auth": true,
       "models": true,
       "mongooseModels": true,
@@ -35,6 +45,14 @@
       "mocha": false,
       "should": false,
       "expect": false
+=======
+      "mongoose": true,
+      "auth": true,
+      "oauth": true,
+      "googleAuth": true,
+      "facebookAuth": true,
+      "twitterAuth": true
+>>>>>>> 31e58baab6aedbca954ad55e172163092ab52889
     }
   },
   "generator-ng-component": {
@@ -45,12 +63,18 @@
     "basePath": "client",
     "moduleName": "",
     "filters": [
+<<<<<<< HEAD
       "uirouter",
       "jasmine",
       "uirouter"
     ],
     "extensions": [
       "babel",
+=======
+      "uirouter"
+    ],
+    "extensions": [
+>>>>>>> 31e58baab6aedbca954ad55e172163092ab52889
       "js",
       "html",
       "scss"

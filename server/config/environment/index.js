@@ -4,7 +4,11 @@ var path = require('path');
 var _ = require('lodash');
 
 function requiredProcessEnv(name) {
+<<<<<<< HEAD
   if (!process.env[name]) {
+=======
+  if(!process.env[name]) {
+>>>>>>> 31e58baab6aedbca954ad55e172163092ab52889
     throw new Error('You must set the ' + name + ' environment variable');
   }
   return process.env[name];
@@ -32,6 +36,12 @@ var all = {
     session: 'thistle-wind-secret'
   },
 
+<<<<<<< HEAD
+=======
+  // List of user roles
+  userRoles: ['guest', 'user', 'admin'],
+
+>>>>>>> 31e58baab6aedbca954ad55e172163092ab52889
   // MongoDB connection options
   mongo: {
     options: {
@@ -64,5 +74,8 @@ var all = {
 // ==============================================
 module.exports = _.merge(
   all,
+<<<<<<< HEAD
   require('./shared'),
+=======
+>>>>>>> 31e58baab6aedbca954ad55e172163092ab52889
   require('./' + process.env.NODE_ENV + '.js') || {});

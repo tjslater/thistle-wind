@@ -16,9 +16,12 @@
   "strict": true,
   "trailing": true,
   "smarttabs": true,
+<<<<<<< HEAD
   "ignoreDelimiters": [
     { "start": "start-non-standard", "end": "end-non-standard" }
   ],
+=======
+>>>>>>> 31e58baab6aedbca954ad55e172163092ab52889
   "globals": {
     "jQuery": true,
     "angular": true,
@@ -26,7 +29,10 @@
     "$": true,
     "_": true,
     "moment": true,
+<<<<<<< HEAD
     "jasmine": true,
+=======
+>>>>>>> 31e58baab6aedbca954ad55e172163092ab52889
     "describe": true,
     "beforeEach": true,
     "module": true,

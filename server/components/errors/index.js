@@ -12,11 +12,18 @@ module.exports[404] = function pageNotFound(req, res) {
   };
 
   res.status(result.status);
+<<<<<<< HEAD
   res.render(viewFilePath, {}, function(err, html) {
     if (err) {
       return res.json(result, result.status);
     }
 
     res.send(html);
+=======
+  res.render(viewFilePath, function (err) {
+    if (err) { return res.json(result, result.status); }
+
+    res.render(viewFilePath);
+>>>>>>> 31e58baab6aedbca954ad55e172163092ab52889
   });
 };

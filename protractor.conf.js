@@ -3,7 +3,11 @@
 
 'use strict';
 
+<<<<<<< HEAD
 var config = {
+=======
+exports.config = {
+>>>>>>> 31e58baab6aedbca954ad55e172163092ab52889
   // The timeout for each script run on the browser. This should be longer
   // than the maximum time your application needs to stabilize between tasks.
   allScriptsTimeout: 110000,
@@ -12,10 +16,16 @@ var config = {
   // with relative paths will be prepended with this.
   baseUrl: 'http://localhost:' + (process.env.PORT || '9000'),
 
+<<<<<<< HEAD
   // Credientials for Saucelabs
   sauceUser: process.env.SAUCE_USERNAME,
 
   sauceKey: process.env.SAUCE_ACCESS_KEY,
+=======
+  // If true, only chromedriver will be started, not a standalone selenium.
+  // Tests for browsers other than chrome will not run.
+  chromeOnly: true,
+>>>>>>> 31e58baab6aedbca954ad55e172163092ab52889
 
   // list of files / patterns to load in the browser
   specs: [
@@ -32,10 +42,14 @@ var config = {
   // and
   // https://code.google.com/p/selenium/source/browse/javascript/webdriver/capabilities.js
   capabilities: {
+<<<<<<< HEAD
     'browserName': 'chrome',
     'name': 'Fullstack E2E',
     'tunnel-identifier': process.env.TRAVIS_JOB_NUMBER,
     'build': process.env.TRAVIS_BUILD_NUMBER
+=======
+    'browserName': 'chrome'
+>>>>>>> 31e58baab6aedbca954ad55e172163092ab52889
   },
 
   // ----- The test framework -----
@@ -43,6 +57,7 @@ var config = {
   // Jasmine and Cucumber are fully supported as a test and assertion framework.
   // Mocha has limited beta support. You will need to include your own
   // assertion framework if working with mocha.
+<<<<<<< HEAD
   framework: 'jasmine2',
 
   // ----- Options to be passed to minijasminenode -----
@@ -74,3 +89,14 @@ var config = {
 
 config.params.baseUrl = config.baseUrl;
 exports.config = config;
+=======
+  framework: 'jasmine',
+
+  // ----- Options to be passed to minijasminenode -----
+  //
+  // See the full list at https://github.com/juliemr/minijasminenode
+  jasmineNodeOpts: {
+    defaultTimeoutInterval: 30000
+  }
+};
+>>>>>>> 31e58baab6aedbca954ad55e172163092ab52889

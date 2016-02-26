@@ -7,4 +7,7 @@ client/bower_components
 dist
 /server/config/local.env.js
 npm-debug.log
+<<<<<<< HEAD
 coverage
+=======
+>>>>>>> 31e58baab6aedbca954ad55e172163092ab52889

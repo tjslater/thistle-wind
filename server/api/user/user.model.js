@@ -1,5 +1,6 @@
 'use strict';
 
+<<<<<<< HEAD
 import crypto from 'crypto';
 var mongoose = require('bluebird').promisifyAll(require('mongoose'));
 import {Schema} from 'mongoose';
@@ -12,11 +13,25 @@ var UserSchema = new Schema({
     type: String,
     lowercase: true
   },
+=======
+var mongoose = require('mongoose');
+var Schema = mongoose.Schema;
+var crypto = require('crypto');
+var authTypes = ['github', 'twitter', 'facebook', 'google'];
+
+var UserSchema = new Schema({
+  name: String,
+  email: { type: String, lowercase: true },
+>>>>>>> 31e58baab6aedbca954ad55e172163092ab52889
   role: {
     type: String,
     default: 'user'
   },
+<<<<<<< HEAD
   password: String,
+=======
+  hashedPassword: String,
+>>>>>>> 31e58baab6aedbca954ad55e172163092ab52889
   provider: String,
   salt: String,
   facebook: {},
@@ -28,6 +43,19 @@ var UserSchema = new Schema({
 /**
  * Virtuals
  */
+<<<<<<< HEAD
+=======
+UserSchema
+  .virtual('password')
+  .set(function(password) {
+    this._password = password;
+    this.salt = this.makeSalt();
+    this.hashedPassword = this.encryptPassword(password);
+  })
+  .get(function() {
+    return this._password;
+  });
+>>>>>>> 31e58baab6aedbca954ad55e172163092ab52889
 
 // Public profile information
 UserSchema
@@ -57,20 +85,31 @@ UserSchema
 UserSchema
   .path('email')
   .validate(function(email) {
+<<<<<<< HEAD
     if (authTypes.indexOf(this.provider) !== -1) {
       return true;
     }
+=======
+    if (authTypes.indexOf(this.provider) !== -1) return true;
+>>>>>>> 31e58baab6aedbca954ad55e172163092ab52889
     return email.length;
   }, 'Email cannot be blank');
 
 // Validate empty password
 UserSchema
+<<<<<<< HEAD
   .path('password')
   .validate(function(password) {
     if (authTypes.indexOf(this.provider) !== -1) {
       return true;
     }
     return password.length;
+=======
+  .path('hashedPassword')
+  .validate(function(hashedPassword) {
+    if (authTypes.indexOf(this.provider) !== -1) return true;
+    return hashedPassword.length;
+>>>>>>> 31e58baab6aedbca954ad55e172163092ab52889
   }, 'Password cannot be blank');
 
 // Validate email is not taken
@@ -78,6 +117,7 @@ UserSchema
   .path('email')
   .validate(function(value, respond) {
     var self = this;
+<<<<<<< HEAD
     return this.constructor.findOneAsync({ email: value })
       .then(function(user) {
         if (user) {
@@ -92,6 +132,17 @@ UserSchema
         throw err;
       });
   }, 'The specified email address is already in use.');
+=======
+    this.constructor.findOne({email: value}, function(err, user) {
+      if(err) throw err;
+      if(user) {
+        if(self.id === user.id) return respond(true);
+        return respond(false);
+      }
+      respond(true);
+    });
+}, 'The specified email address is already in use.');
+>>>>>>> 31e58baab6aedbca954ad55e172163092ab52889
 
 var validatePresenceOf = function(value) {
   return value && value.length;
@@ -102,6 +153,7 @@ var validatePresenceOf = function(value) {
  */
 UserSchema
   .pre('save', function(next) {
+<<<<<<< HEAD
     // Handle new/update passwords
     if (!this.isModified('password')) {
       return next();
@@ -125,6 +177,14 @@ UserSchema
         next();
       });
     });
+=======
+    if (!this.isNew) return next();
+
+    if (!validatePresenceOf(this.hashedPassword) && authTypes.indexOf(this.provider) === -1)
+      next(new Error('Invalid password'));
+    else
+      next();
+>>>>>>> 31e58baab6aedbca954ad55e172163092ab52889
   });
 
 /**
@@ -134,6 +194,7 @@ UserSchema.methods = {
   /**
    * Authenticate - check if the passwords are the same
    *
+<<<<<<< HEAD
    * @param {String} password
    * @param {Function} callback
    * @return {Boolean}
@@ -155,11 +216,20 @@ UserSchema.methods = {
         callback(null, false);
       }
     });
+=======
+   * @param {String} plainText
+   * @return {Boolean}
+   * @api public
+   */
+  authenticate: function(plainText) {
+    return this.encryptPassword(plainText) === this.hashedPassword;
+>>>>>>> 31e58baab6aedbca954ad55e172163092ab52889
   },
 
   /**
    * Make salt
    *
+<<<<<<< HEAD
    * @param {Number} byteSize Optional salt byte size, default to 16
    * @param {Function} callback
    * @return {String}
@@ -190,12 +260,20 @@ UserSchema.methods = {
         callback(null, salt.toString('base64'));
       }
     });
+=======
+   * @return {String}
+   * @api public
+   */
+  makeSalt: function() {
+    return crypto.randomBytes(16).toString('base64');
+>>>>>>> 31e58baab6aedbca954ad55e172163092ab52889
   },
 
   /**
    * Encrypt password
    *
    * @param {String} password
+<<<<<<< HEAD
    * @param {Function} callback
    * @return {String}
    * @api public
@@ -225,3 +303,16 @@ UserSchema.methods = {
 };
 
 export default mongoose.model('User', UserSchema);
+=======
+   * @return {String}
+   * @api public
+   */
+  encryptPassword: function(password) {
+    if (!password || !this.salt) return '';
+    var salt = new Buffer(this.salt, 'base64');
+    return crypto.pbkdf2Sync(password, salt, 10000, 64).toString('base64');
+  }
+};
+
+module.exports = mongoose.model('User', UserSchema);
+>>>>>>> 31e58baab6aedbca954ad55e172163092ab52889
