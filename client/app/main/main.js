@@ -8,13 +8,5 @@ angular.module('thistleWindApp')
         templateUrl: 'app/main/main.html',
         controller: 'HomeCtrl'
       })
-      .state('main.enter', {
-        url: 'enter',
-        views: {
-          'enter': {
-            templateUrl: 'app/account/login/login.html',
-            controller: 'LoginCtrl'
-          }
-        }
-      })
   });
+
