@@ -1,12 +1,20 @@
 'use strict';
 
 angular.module('thistleWindApp')
-  .config(function($stateProvider) {
+  .config(function ($stateProvider) {
     $stateProvider
       .state('main', {
         url: '/',
         templateUrl: 'app/main/main.html',
-        controller: 'MainController',
-        controllerAs: 'main'
-      });
+        controller: 'HomeCtrl'
+      })
+      .state('main.enter', {
+        url: 'enter',
+        views: {
+          'enter': {
+            templateUrl: 'app/account/login/login.html',
+            controller: 'LoginCtrl'
+          }
+        }
+      })
   });

@@ -6,8 +6,7 @@ angular.module('thistleWindApp')
       .state('login', {
         url: '/login',
         templateUrl: 'app/account/login/login.html',
-        controller: 'LoginController',
-        controllerAs: 'vm'
+        controller: 'LoginCtrl'
       })
       .state('logout', {
         url: '/logout?referrer',
@@ -24,8 +23,7 @@ angular.module('thistleWindApp')
       .state('signup', {
         url: '/signup',
         templateUrl: 'app/account/signup/signup.html',
-        controller: 'SignupController',
-        controllerAs: 'vm'
+        controller: 'SignupCtrl'
       })
       .state('settings', {
         url: '/settings',
