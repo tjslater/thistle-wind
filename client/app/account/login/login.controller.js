@@ -15,7 +15,7 @@ angular.module('thistleWindApp')
           })
           .then(function () {
             // Logged in, redirect to home
-            $location.path('/');
+            $location.path('/dash');
           })
           .catch(function (err) {
             $scope.errors.other = err.message;

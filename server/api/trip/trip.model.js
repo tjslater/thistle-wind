@@ -11,6 +11,7 @@ var TripSchema = new mongoose.Schema({
   hotel: String,
   address: String,
   phone: String,
+  img: String
 
 });
 
