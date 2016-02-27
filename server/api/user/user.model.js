@@ -24,8 +24,7 @@ var UserSchema = new Schema({
   google: {},
   clothing: [{}],
   sizing: {},
-  location: {},
-  trips: [{}]
+  location: {}
 });
 
 /**

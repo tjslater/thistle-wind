@@ -6,6 +6,7 @@ angular.module('thistleWindApp')
       .state('onboarding', {
         url: '/onboarding',
         templateUrl: 'app/onboarding/onboarding.html',
-        controller: 'OnboardingCtrl'
+        controller: 'OnboardingCtrl',
+        authenticate: true
       });
   });

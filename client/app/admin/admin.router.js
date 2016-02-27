@@ -6,8 +6,7 @@ angular.module('thistleWindApp.admin')
       .state('admin', {
         url: '/admin',
         templateUrl: 'app/admin/admin.html',
-        controller: 'AdminController',
-        controllerAs: 'admin',
+        controller: 'AdminCtrl',
         authenticate: 'admin'
       });
   });

@@ -1,16 +1,16 @@
 /**
  * Using Rails-like standard naming convention for endpoints.
- * GET     /api/trips              ->  index
- * POST    /api/trips              ->  create
- * GET     /api/trips/:id          ->  show
- * PUT     /api/trips/:id          ->  update
- * DELETE  /api/trips/:id          ->  destroy
+ * GET     /api/clothings              ->  index
+ * POST    /api/clothings              ->  create
+ * GET     /api/clothings/:id          ->  show
+ * PUT     /api/clothings/:id          ->  update
+ * DELETE  /api/clothings/:id          ->  destroy
  */
 
 'use strict';
 
 import _ from 'lodash';
-import Trip from './trip.model';
+import Clothing from './clothing.model';
 
 function respondWithResult(res, statusCode) {
   statusCode = statusCode || 200;
@@ -59,50 +59,43 @@ function handleError(res, statusCode) {
   };
 }
 
-// Gets a list of Trips
+// Gets a list of Clothings
 export function index(req, res) {
-  Trip.findAsync()
+  Clothing.findAsync()
     .then(respondWithResult(res))
     .catch(handleError(res));
 }
 
-export function userIndex(req, res) {
-  console.log(req.params);
-  Trip.find({memberId: req.params.id})
-    .then(respondWithResult(res))
-    .catch(handleError(res));
-}
-
-// Gets a single Trip from the DB
+// Gets a single Clothing from the DB
 export function show(req, res) {
-  Trip.findByIdAsync(req.params.id)
+  Clothing.findByIdAsync(req.params.id)
     .then(handleEntityNotFound(res))
     .then(respondWithResult(res))
     .catch(handleError(res));
 }
 
-// Creates a new Trip in the DB
+// Creates a new Clothing in the DB
 export function create(req, res) {
-  Trip.createAsync(req.body)
+  Clothing.createAsync(req.body)
     .then(respondWithResult(res, 201))
     .catch(handleError(res));
 }
 
-// Updates an existing Trip in the DB
+// Updates an existing Clothing in the DB
 export function update(req, res) {
   if (req.body._id) {
     delete req.body._id;
   }
-  Trip.findByIdAsync(req.params.id)
+  Clothing.findByIdAsync(req.params.id)
     .then(handleEntityNotFound(res))
     .then(saveUpdates(req.body))
     .then(respondWithResult(res))
     .catch(handleError(res));
 }
 
-// Deletes a Trip from the DB
+// Deletes a Clothing from the DB
 export function destroy(req, res) {
-  Trip.findByIdAsync(req.params.id)
+  Clothing.findByIdAsync(req.params.id)
     .then(handleEntityNotFound(res))
     .then(removeEntity(res))
     .catch(handleError(res));

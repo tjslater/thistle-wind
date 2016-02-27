@@ -6,12 +6,12 @@ var TripSchema = new mongoose.Schema({
   destination: String,
   origin: String,
   isReturn: Boolean,
-  departure: String,
-  return: String,
+  departureDate: String,
+  returnDate: String,
   hotel: String,
   address: String,
   phone: String,
-  memberId: String
+
 });
 
 export default mongoose.model('Trip', TripSchema);

@@ -6,6 +6,7 @@ angular.module('thistleWindApp')
       .state('dash', {
         url: '/dash',
         templateUrl: 'app/dash/dash.html',
-        controller: 'DashCtrl'
+        controller: 'DashCtrl',
+        authenticate: true
       });
   });

@@ -17,6 +17,8 @@ function onConnect(socket) {
   });
 
   // Insert sockets below
+  require('../api/clothing/clothing.socket').register(socket);
+  require('../api/expedia/expedia.socket').register(socket);
   require('../api/trip/trip.socket').register(socket);
 
 }

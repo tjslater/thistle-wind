@@ -6,6 +6,7 @@ angular.module('thistleWindApp')
       .state('itinerary', {
         url: '/itinerary',
         templateUrl: 'app/itinerary/itinerary.html',
-        controller: 'ItineraryCtrl'
+        controller: 'ItineraryCtrl',
+        authenticate: true
       });
   });
