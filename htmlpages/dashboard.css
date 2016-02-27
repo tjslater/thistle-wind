@@ -1,0 +1,100 @@
+.sidebar {
+    padding: 5% 0 0 7%;
+    background: silver;
+    height: 100%;
+    font-size: 1em;
+}
+
+.sidebar ul {
+    list-style-type: none;
+}
+
+.sidebar .link, .sidebar .sublink{
+    margin: 8%;
+}
+
+.active-link {
+    font-weight: 900;
+}
+
+.dashview {
+    height: 80vh;
+    padding: 3% 9% 0 1%;
+}
+
+.hrz-line {
+}
+
+.panel-title .city-name {
+    padding-left: 10%;
+    line-height: 30px;
+}
+
+.date {
+    line-height: 30px;
+}
+
+.collapse-button, .collapse-button:visited, .collapse-button:hover, .collapsed-button:active {
+    color: black;
+    text-decoration: none;
+    line-height: 30px;
+}
+
+.panel-default > .panel-heading {
+    background: transparent;
+}
+
+.panel-group .panel + .panel {
+    margin-top: 0;
+    border-top: 0;
+}
+
+.panel-group .panel {
+    border-radius: 0;
+    border: 1px black solid;
+}
+
+.panel-body {
+    padding: 0;
+}
+.weather-widget {
+    background: url('assets/images/brooklynbridge.jpeg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding: 3% 10%;
+}
+
+.weather {
+    background: white;
+    text-align: center;
+    padding: 6% 10%;
+}
+
+.weather-city {}
+
+.weather-city > .city-name {
+    font-size: 3em;
+}
+
+.weather-date {
+    font-size: 0.85em;
+}
+
+.weather-display {
+    width: 320px;
+    border-top:1px solid silver;
+    margin: 3% auto;
+    padding: 3% 0;
+}
+
+.wardrobe {
+    margin: 35px auto;
+    padding: 20px 0;
+    width: 80%;
+    text-align: center;
+    border-top: 1px solid black;
+    border-bottom: 2px solid black;
+    letter-spacing: 0.4em;
+}

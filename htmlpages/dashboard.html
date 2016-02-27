@@ -8,7 +8,6 @@
         <div class="navigation row">
             <a href="#"><div class="link logo">LOGO</div></a>
             <div class="links">
-
                 <a href="#"><div class="link">how it works</div></a>
                 <a href="#"><div class="link">collections</div></a>
                 <a href="#"><div class="link">lookbook</div></a>
@@ -16,8 +15,97 @@
                 <a data-toggle="modal" data-target="#registerModal"><div class="link registration">get started</div></a>
             </div>
         </div>
-        <div class="container-fluid content home">
-            
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-3 sidebar">
+                    <ul>
+                        <li class="link text-uppercase">my profile</li>
+                        <li class="link text-uppercase active-link">my dash</li>
+                        <li>
+                            <ul>
+                                <li class="sublink text-uppercase">next trip</li>
+                                <li class="sublink text-uppercase active-link">upcoming trips</li>
+                                <li class="sublink text-uppercase">my wardrobe</li>
+                            </ul>
+                        </li>
+                        <li class="link text-uppercase">fill suitcase</li>
+
+                    </ul>
+                </div>
+                <div class="col-xs-9 dashview">
+                    <div class="hrz-line"></div>
+                    <div class="page-title text-uppercase">my dashboard</div>
+                    <div class="decoration-box"></div>
+                    <div class="dash-title text-uppercase">upcoming trips at a glance/</div>
+
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="destination1">
+                                <h4 class="panel-title">
+                                    <div class="row">
+                                        <div class="col-xs-8 city-name text-uppercase">new york</div>
+                                        <div class="col-xs-3 date">01.01.16-01.04.16</div>
+                                        <div class="col-xs-1">
+                                            <a class="collapse-button" role="button" data-toggle="collapse" data-parent="#accordion" href="#trip1" aria-expanded="true" aria-controls="trip1">+</a>
+                                        </div>
+                                    </div>
+                                    
+                                </h4>
+                            </div>
+                            <div id="trip1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="destination1">
+                                <div class="panel-body">
+                                    <div class="weather-widget">
+                                        <div class="weather">
+                                            <div class="weather-city">
+                                                <div class="city-name text-uppercase">new york city</div>
+                                                <div class="weather-date">03.14.16-03.22.16</div>
+                                            </div>
+                                            <div class="weather-display">
+                                                <img src="assets/images/weather.png"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="wardrobe text-uppercase">
+                                        your wardrobe is empty
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="destination2">
+                                <h4 class="panel-title">
+                                    <div class="row">
+                                        <div class="col-xs-8 city-name text-uppercase">San francisco</div>
+                                        <div class="col-xs-3 date">01.01.16-01.04.16</div>
+                                        <div class="col-xs-1">
+                                            <a class="collapse-button" role="button" data-toggle="collapse" data-parent="#accordion" href="#trip2" aria-expanded="true" aria-controls="trip2">+</a>
+                                        </div>
+                                    </div>
+                                </h4>
+                            </div>
+                            <div id="trip2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="destination2">
+                                <div class="panel-body">
+                                    <div class="weather-widget">
+                                        <div class="weather">
+                                            <div class="weather-city">
+                                                <div class="city-name text-uppercase">san francisco</div>
+                                                <div class="weather-date">03.14.16-03.22.16</div>
+                                            </div>
+                                            <div class="weather-display">
+                                                <img src="assets/images/weather.png"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="wardrobe text-uppercase">
+                                        your wardrobe is empty
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </body>
