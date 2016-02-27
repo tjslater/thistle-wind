@@ -1,0 +1,208 @@
+#outfit1bg {
+    width: 40%;
+    height: 20vw;
+    background: #839484;
+}
+.outfit#outfit1 {
+    width: 40%;
+    height: 19vw;
+    top: 1vw;
+}
+
+.outfit#outfit2 {
+    width: 40%;
+    height: 15vw;
+    left: 45%;
+}
+
+.outfit#outfit3 {
+    width: 30%;
+    height: 15vw;
+    left: 8%;
+    top: 21.5vw;
+}
+
+#outfit4bg {
+    width: 20%;
+    height: 11vw;
+    left: 47%;
+    top: 15.5vw;
+    background: #aed5da;
+}
+
+#outfit4bg2 {
+    width: 20%;
+    height: 19vw;
+    left: 45%;
+    top: 16.5vw;
+    background: #d8a65d;
+}
+
+.outfit#outfit4 {
+    width: 20%;
+    height: 19vw;
+    left: 45%;
+    top: 17.5vw;
+}
+
+.outfit#outfit5 {
+    width: 28%;
+    height: 15vw;
+    left: 70%;
+    top: 16.5vw;
+}
+
+
+
+#outfit6bg {
+    width: 30%;
+    height: 17vw;
+    top: 38.5vw;
+    background: #aed5da;
+}
+
+#outfit6bg2 {
+    width: 30%;
+    height: 16vw;
+    left: 2%;
+    top: 39.5vw;
+    background: #8781bd;
+}
+
+.outfit#outfit6 {
+    width: 30%;
+    height: 15vw;
+    left: 2%;
+    top: 40.5vw;
+}
+
+.outfit#outfit7 {
+    width: 20%;
+    height: 13vw;
+    top: 42vw;
+    left: 35%;
+}
+
+.outfit#outfit8 {
+    width: 28%;
+    height: 17vw;
+    top: 34vw;
+    left: 70%;
+
+}
+
+.outfit#outfit9 {
+    width: 33%;
+    height: 24vw;
+    left: 10%;
+    top: 57vw;
+}
+
+.outfit#outfit10 {
+    width: 20%;
+    height: 10vw;
+    left: 47%;
+    top: 60vw;
+}
+
+#outfit11bg {
+    width: 30%;
+    height: 17vw;
+    left: 58%;
+    top: 52vw;
+    background: #aed5da;
+}
+
+#outfit11bg2 {
+    width: 30%;
+    height: 17vw;
+    left: 60%;
+    top: 53vw;
+    background: #e09a96;
+}
+
+.outfit#outfit11 {
+    width: 33%;
+    height: 17vw;
+    left: 60%;
+    top: 54vw; 
+}
+
+.overlay#dialog1 {
+    width: 30%;
+    height: 5vw;
+    top: 12vw;
+    left: 10%;
+}
+
+.overlay#dialog2 {
+    width: 15%;
+    height: 5vw;
+    top: 27.5vw;
+    left: 52%;
+}
+
+.overlay#dialog3 {
+    width: 18%;
+    height: 5vw;
+    top: 43vw;
+    left: 16%;
+}
+
+.overlay#dialog4 {
+    width: 17%;
+    height: 5vw;
+    top: 65vw;
+    left: 78%;
+}
+
+#dialog1 .box {
+    background: #839484;
+}
+
+#dialog2 .box {
+    background: #d8a65d;
+}
+
+#dialog3 .box {
+    background: #8781bd;
+}
+
+#dialog4 .box {
+    background: #e09a96;
+}
+
+.next-step {
+    position: absolute;
+    width: 49%;
+    height: 8vw;
+    left: 50%;
+    top: 73vw; 
+}
+
+.next-step .title{
+    text-align: right;
+    font-size: 1.3em;
+    line-height: 15px;
+    height: 30px;
+    margin-top: 2%;
+}
+
+.next-step .deco .box {
+    background: #839484;
+    height: 10px;
+    width: 4.5vw;
+}
+
+.next-step .line {
+    border-bottom: 1px solid black;
+}
+
+.next-step button {
+    float: right;
+    border: 1px solid #839484;
+    background: transparent;
+    padding: 0.7vw 2.6vw;
+    margin-top: 5%;
+    font-size: 1.3em;
+}

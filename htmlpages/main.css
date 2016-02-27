@@ -1,0 +1,79 @@
+body {
+    height: 100%;
+}
+.content {
+    height: 80%;
+    margin: 0 100px 0 100px;
+    
+}
+
+.home {
+    background: url("assets/images/mountains-nature-man-person.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.start {
+    color: #839484;
+}
+
+.navigation {
+    padding: 20px 100px 20px 100px;
+}
+.navigation .logo {
+    display: inline-block;
+    width: 200px;
+}
+
+.navigation a {
+    color: black;
+}
+.navigation a:visited{
+    color: black;
+}
+.navigation a:hover {
+    color: black;
+}
+
+
+
+.navigation .links {
+    display: inline-block;
+    margin-right: 2%;
+    float: right;
+}
+.navigation .link {
+    display: inline-block;
+    width: 110px;
+    text-align: center;
+    padding: 3px;
+}
+
+.navigation .link.logo {
+}
+
+.navigation .registration {
+    border: 1px solid black;
+}
+
+.links button {
+}
+
+.small-text {
+    font-size: 0.6em;
+}
+
+.med-text {
+    font-size: 0.7em;
+}
+
+.large-text {
+    font-size: 1.2em;
+}
+
+.sm-pad-bottom {
+    padding-bottom: 18px;
+}
+

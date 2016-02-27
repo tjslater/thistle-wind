@@ -1,0 +1,100 @@
+body {
+    height: 110vw;
+}
+
+.page .title {
+    font-size: 0.7em;
+    line-height: 30px;
+    color: white;
+    background: #839484;
+}
+
+.page .hr-line {
+    height: 15px;
+    border-bottom: 1px solid #839484;
+}
+
+.box-deco {
+    margin: 0.5% 0 10% 0;
+    height: 5px;
+    width: 3%;
+    background: #e09a96;
+}
+
+.profile {
+    margin: 110px 0 0 0;
+}
+
+.profile .hr-line {
+    height: 10px;
+    border-bottom: 1px solid #839484;
+    /*margin: 0 3% 0 3%;*/
+}
+
+.profile .title {
+    color: #839484;
+    font-size: 0.7em;
+    line-height: 20px;
+}
+
+.profile .description {
+    font-size: 2em;
+}
+
+.description .underline {
+    color: silver;
+    text-decoration: underline;
+}
+
+.description .dashed {
+    color: silver;
+    border-bottom: 2px dashed silver;
+}
+
+.gallery {
+
+}
+.gallery .title {
+    font-weight: 500;
+    font-size: 2em;
+    height: 50px;
+}
+.gallery .sub-text {
+    height: 60px;
+}
+
+.gallery .clothes {
+    position: relative;
+}
+
+.clothes .outfit {
+    position: absolute;
+    border: 1px solid black;
+    background: gray;
+}
+
+.clothes .bgColor {
+    position: absolute;
+}
+
+.clothes .overlay {
+    position: absolute;
+    background: silver;
+    padding: 2%;
+    color: black;
+}
+
+.deco {
+    padding: 0 0 3% 5%;
+}
+
+.deco .box {
+    height: 3px;
+    width: 1.3vw;
+}
+.deco .line {
+    width: 100%;
+    border-bottom: 1px solid gray;
+}
+
+
