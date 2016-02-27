@@ -22,8 +22,10 @@ var UserSchema = new Schema({
   facebook: {},
   twitter: {},
   google: {},
-  clothing: {},
-  sizing: {}
+  clothing: [{}],
+  sizing: {},
+  location: {},
+  trips: [{}]
 });
 
 /**

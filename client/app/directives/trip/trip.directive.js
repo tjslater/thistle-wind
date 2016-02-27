@@ -1,9 +1,9 @@
 'use strict';
 
 angular.module('thistleWindApp')
-  .directive('login', function () {
+  .directive('trip', function () {
     return {
-      templateUrl: 'app/directives/login/login.html',
+      templateUrl: 'app/directives/trip/trip.html',
       restrict: 'EA',
       link: function (scope, element, attrs) {
       }

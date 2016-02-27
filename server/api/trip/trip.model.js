@@ -9,8 +9,9 @@ var TripSchema = new mongoose.Schema({
   departure: String,
   return: String,
   hotel: String,
-  address: String
-
+  address: String,
+  phone: String,
+  memberId: String
 });
 
 export default mongoose.model('Trip', TripSchema);

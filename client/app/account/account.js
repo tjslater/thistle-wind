@@ -28,8 +28,7 @@ angular.module('thistleWindApp')
       .state('settings', {
         url: '/settings',
         templateUrl: 'app/account/settings/settings.html',
-        controller: 'SettingsController',
-        controllerAs: 'vm',
+        controller: 'SettingsCtrl',
         authenticate: true
       });
   })
