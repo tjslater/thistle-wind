@@ -325,4 +325,7 @@ body {
   padding: 0.7vw 2.6vw;
   margin-top: 5%;
   font-size: 1.3em;
+  &.disabled {
+    color: #DDD;
+  }
 }
