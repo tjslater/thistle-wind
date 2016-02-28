@@ -1,1 +1,114 @@
-{{user}}
+<div class="container-fluid">
+  <div class="dashboard row">
+    <sidebar></sidebar>
+    <div class="profile col-xs-9">
+      <div class="hrz-line"></div>
+      <div class="page-title text-uppercase">my profile</div>
+      <div class="dash-title text-uppercase">your profile/</div>
+      <p class="sub-text">Help us get to know you a little better</p>
+      <div class="profile-container">
+        <div class="profile-form">
+          <div class="form-bg1"></div>
+          <div class="form-bg2"></div>
+          <div class="form-bg3"></div>
+          <div class="form-fill">
+            <div class="row">
+              <div class="col-xs-1">
+                <span class="form-name text-uppercase">name</span>
+              </div>
+              <div class="col-xs-9">
+                <input class="form-input" name="name" ng-model="user.name"/>
+              </div>
+            </div>
+            <hr class="form-line">
+            <div class="row">
+              <div class="col-xs-1">
+                <span class="form-name text-uppercase">loc.</span>
+              </div>
+              <div class="col-xs-9">
+                <input class="form-input" name="location" ng-model="user.location"/>
+              </div>
+            </div>
+            <hr class="form-line">
+            <div class="row">
+              <div class="col-xs-1">
+                <span class="text-uppercase form-name">size</span>
+              </div>
+              <div class="col-xs-11">
+                <hr class="form-line size">
+                <div class="clothing-fashion">
+                  <p class="clothing-type">jacket</p>
+                  <div class="row">
+                    <div class="col-xs-3">
+                      <select class="clothing-style text-uppercase">
+                        <option>inseam</option>
+                      </select>
+                    </div>
+                    <div class="col-xs-3">
+                      <select class="clothing-size text-uppercase">
+                        <option>length</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <p class="clothing-type">dress shirt</p>
+                  <div class="row">
+                    <div class="col-xs-3">
+                      <select class="clothing-style text-uppercase">
+                        <option>inseam</option>
+                      </select>
+                    </div>
+                    <div class="col-xs-3">
+                      <select class="clothing-size text-uppercase">
+                        <option>arm length</option>
+                      </select>
+                    </div>
+                  </div>
+                  <p class="clothing-type">pant</p>
+                  <div class="row">
+                    <div class="col-xs-3">
+                      <select class="clothing-style text-uppercase">
+                        <option>inseam</option>
+                      </select>
+                    </div>
+                    <div class="col-xs-3">
+                      <select class="clothing-size text-uppercase">
+                        <option>length</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="tee-size">
+                  <p class="clothing-type">tee</p>
+                  <select class="clothing-size  text-uppercase">
+                    <option>length</option>
+                  </select>
+                </div>
+
+                <div class="brand-pref">
+                  <p class="brand">your got-to brands</p>
+                  <select class="clothing-size text-uppercase">
+                    <option>add a brand</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="save-profile pull-right">
+            <p class="dashboard-message">back to dasbhoard</p>
+            <div class="box-center-line">
+              <div class="box"></div>
+              <div class="line"></div>
+            </div>
+            <button class="go-dashboard text-uppercase" ui-sref="dash">go</button>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

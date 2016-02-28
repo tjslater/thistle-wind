@@ -20,6 +20,7 @@ $fa-font-path: "../bower_components/font-awesome/fonts";
 @import 'admin/admin.scss';
 @import 'dash/dash.scss';
 @import 'directives/clothingdropper/clothingdropper.scss';
+@import 'directives/sidebar/sidebar.scss';
 @import 'directives/trip/trip.scss';
 @import 'itinerary/itinerary.scss';
 @import 'main/main.scss';
@@ -31,6 +32,7 @@ $fa-font-path: "../bower_components/font-awesome/fonts";
 @import '../components/footer/footer.scss';
 @import '../components/modal/modal.scss';
 @import '../components/oauth-buttons/oauth-buttons.scss';
+@import '../components/sidebar/sidebar.scss';
 // endinjector
 
 body {
@@ -124,4 +126,55 @@ a:hover, a:active {
   padding-bottom: 18px;
 }
 
+
+.navigation .registration {
+  border: 1px solid black;
+}
+
+.links button {
+}
+
+.small-text {
+  font-size: 0.6em;
+}
+
+.med-text {
+  font-size: 0.7em;
+}
+
+.large-text {
+  font-size: 1.2em;
+}
+
+.sm-pad-bottom {
+  padding-bottom: 18px;
+}
+
+.hrz-line {
+  width: 100%;
+  border-bottom: 1px solid black;
+}
+
+.page-title {
+  width: 12%;
+  text-align: center;
+  color: black;
+  padding: 0.5%;
+  font-size: 0.7em;
+  border: 1px solid #839484;
+  border-top: 0;
+}
+
+.decoration-box {
+  margin: 10px 0 0 0;
+  height: 4px;
+  width: 4%;
+  background: #e09a96;
+}
+
+.dash-title {
+  margin: 30px 0 30px 0;
+  font-size: 1.2em;
+  letter-spacing: 0.1em;
+}
 
