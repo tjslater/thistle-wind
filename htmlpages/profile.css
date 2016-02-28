@@ -1,0 +1,175 @@
+.profile {
+    padding: 50px 60px;   
+}
+
+.sidebar {
+    height: 100%;
+    background: silver;
+    font-size: 1em;
+}
+
+.sidebar ul {
+    list-style-type: none;
+}
+
+.sidebar .link, .sidebar .sublink{
+    margin: 8%;
+}
+
+.sub-text {
+    font-size: 0.7em;
+    font-style: italic;
+    letter-spacing: 0.1em;
+}
+
+.dash-title {
+    padding: 30px 0 0 0;
+}
+
+.profile-form {
+    position: relative;
+}
+
+.profile-container {
+    margin-top: 60px;
+}
+
+.form-fill {
+    margin: 20px;
+    border: 1px solid black;
+    padding: 10px 10px 30px 10px;
+    background-color: white;
+}
+
+.form-name {
+    line-height: 35px;
+    font-weight: 500;
+    font-size: 1.2em;
+    letter-spacing: 0.2em;
+}
+
+.form-line {
+    margin: 5px;
+}
+
+.form-line.size {
+    margin: 35px 0 0 0;
+}
+
+.form-input {
+    width: 100%;
+    border: none;
+    height: 35px;
+}
+
+.clothing-fashion {
+    background-color: silver;
+    padding: 20px 0 30px 15px;
+    margin-top: 20px;
+    margin-right:15px;
+    font-size: 0.9em;
+    letter-spacing: 0.1em;
+}
+
+.clothing-type {
+    font-size: 0.9em;
+    margin: 15px 0;
+    font-style: italic;
+    font-size: 0.9em;
+    letter-spacing: 0.1em;
+}
+
+.clothing-style {
+    width: 140px;
+    height: 25px;
+    border: 1px solid black;
+    font-size: 0.9em;
+    letter-spacing: 0.1em;
+    padding-left: 7px;
+}
+
+.clothing-size {
+    width: 140px;
+    height: 25px;
+    padding-left: 7px;
+    border: 1px solid black;
+    border-radius: 0;
+    font-size: 0.9em;
+    letter-spacing: 0.1em;
+}
+
+.brand {
+    font-size: 0.9em;
+    margin: 8px 0;
+    font-style: italic;
+}
+
+.tee-size, .brand-pref {
+    margin-left: 15px;
+}
+
+.form-bg1 {
+    background-color: #acd3d8;
+    width: 97.5%;
+    height: 40%;
+    position: absolute;
+    top: -18px;
+    left: 15px;
+    z-index: -1;
+}
+
+.form-bg2 {
+    background-color: #d8a65d;
+    width: 10%;
+    height: 20%;
+    position: absolute;
+    top: -10px;
+    z-index: -1;
+    left: 10px;
+}
+
+.form-bg3 {
+    background-color: silver;
+    width: 95.7%;
+    height: 10%;
+    position: absolute;
+    top: 530px;
+    z-index: -1;
+    left: 20px;
+}
+
+.save-profile {
+    padding-right: 20px;
+    text-align: right;
+    position: relative;
+    width: 40%;
+}
+
+.dashboard-message {
+    padding-bottom: 30px;
+    font-size: 0.9em;
+    font-style: italic;
+}
+
+.box-center-line .box {
+    width: 20%;
+    height: 10px;
+    background-color: #839484;
+    position: absolute;
+    top: 30px;
+}
+
+.box-center-line .line {
+    top: 30px;
+    width: 93%;
+    height: 5px;
+    border-bottom: 1px solid black;
+    position: absolute; 
+}
+
+.go-dashboard {
+    padding: 5px 20px;
+    border: 1px solid black;
+    background-color: white;
+    font-size: 0.8em;
+}
