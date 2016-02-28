@@ -17,7 +17,7 @@ angular.module('thistleWindApp')
                           $state.current.referrer ||
                           'main';
           Auth.logout();
-          $state.go(referrer);
+          $state.go('main');
         }
       })
       .state('signup', {
