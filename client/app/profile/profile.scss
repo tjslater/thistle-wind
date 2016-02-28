@@ -4,7 +4,7 @@
 }
 
 .sidebar {
-  height: 100%;
+  height: 1024px;
   background: silver;
   font-size: 1em;
 }
@@ -13,7 +13,7 @@
   list-style-type: none;
 }
 
-.sidebar .link, .sidebar .sublink{
+.sidebar .link, .sidebar .sublink {
   margin: 8%;
 }
 
@@ -67,7 +67,7 @@
   background-color: silver;
   padding: 20px 0 30px 15px;
   margin-top: 20px;
-  margin-right:15px;
+  margin-right: 15px;
   font-size: 0.9em;
   letter-spacing: 0.1em;
 }
