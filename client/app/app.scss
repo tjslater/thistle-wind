@@ -3,6 +3,21 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/vendor/assets/font
 @import '../bower_components/bootstrap-social/bootstrap-social.scss';
 $fa-font-path: "../bower_components/font-awesome/fonts";
 @import '../bower_components/font-awesome/scss/font-awesome';
+@font-face {
+  font-family: 'Bebas Neue';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Bebas Neue'), url('BebasNeue.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Bebas';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Bebas'), url('Bebas.woff') format('woff');
+}
+
 
 /**
  * App-wide Styles
@@ -47,7 +62,11 @@ a {
   color: black;
   text-decoration: none;
   cursor: pointer;
-  font-family: bebas !important;
+  font-family: 'Bebas Neue' !important;
+}
+
+p{
+  font-family: 'sabon' !important;
 }
 
 a:hover, a:active {
@@ -178,3 +197,13 @@ a:hover, a:active {
   letter-spacing: 0.1em;
 }
 
+.text-lowercase {
+  text-transform: lowercase;
+}
+.text-uppercase {
+  text-transform: uppercase;
+  font-family: 'Bebas Neue';
+}
+.text-capitalize {
+  text-transform: capitalize;
+}

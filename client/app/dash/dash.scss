@@ -1,16 +1,19 @@
 .sidebar {
   height:968px;
-  background: #E9E9E9;
+  ;
   font-size: 1em;
 }
 
 .sidebar ul {
   list-style-type: none;
+  margin-top: 40%;
+  margin-left: 40%;
 }
 
 .dashboard {
   /*height: 100%;*/
   position: relative;
+
 }
 
 .sidebar .link, .sidebar .sublink{
@@ -156,7 +159,7 @@
 
 .collection-brand {
   font-weight: 800;
-  font-style: italic;
+  font-style: italic; font-family: 'Sabon';
   font-size: 1.4em;
 }
 
@@ -167,7 +170,7 @@
 .collection-creator {
   font-size: 0.7em;
   margin-bottom: 40px;
-  font-style: italic;
+  font-style: italic; font-family: 'Sabon';
 }
 
 .collection-type {
