@@ -1,0 +1,192 @@
+.sidebar {
+  height:968px;
+  background: silver;
+  font-size: 1em;
+}
+
+.sidebar ul {
+  list-style-type: none;
+}
+
+.dashboard {
+  /*height: 100%;*/
+  position: relative;
+}
+
+.sidebar .link, .sidebar .sublink{
+  margin: 8%;
+}
+
+.active-link {
+  font-weight: 900;
+}
+
+.dashview {
+  /*height: 100%;*/
+  padding: 3% 9% 0 1%;
+  display: inline-block;
+}
+
+.hrz-line {
+}
+
+.trip {
+  height: 45px;
+  border: 1px solid black;
+  overflow: hidden;
+}
+
+.trip.active {
+  height: auto;
+}
+
+.trip-info {
+  height: 45px;
+}
+
+.trip-info .city-name {
+  line-height: 45px;
+}
+
+.trip-info .collapse-button {
+  line-height: 45px;
+}
+
+.trip + .trip {
+  border-top: 0;
+}
+
+.date {
+  line-height: 45px;
+}
+
+
+
+.weather-widget {
+  background: url('../assets/images/dash/brooklynbridge.jpeg') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding: 3% 10%;
+}
+
+.weather {
+  background: white;
+  text-align: center;
+  padding: 6% 10%;
+}
+
+.weather-city {}
+
+.weather-city > .city-name {
+  font-size: 3em;
+}
+
+.weather-date {
+  font-size: 0.85em;
+}
+
+.weather-display {
+  width: 320px;
+  border-top:1px solid silver;
+  margin: 3% auto;
+  padding: 3% 0;
+}
+
+.wardrobe {
+  margin: 35px auto 20px auto;
+  padding: 20px 0;
+  width: 80%;
+  text-align: center;
+  border-top: 1px solid black;
+  border-bottom: 2px solid black;
+  letter-spacing: 0.4em;
+}
+
+.inventory {
+  margin: auto;
+  width: 80%;
+  text-align: center;
+  border-bottom: 1px solid black;
+}
+
+.inventory-title {
+  font-size: 0.8em;
+  font-weight: 900;
+  border-right: 1px solid silver;
+}
+
+.num-clothes {
+  margin: 0;
+  font-size: 2em;
+}
+
+.collection-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.clothes-collection .row {
+  width: 200px;
+  margin: auto;
+}
+
+.clothes-collection .row{
+
+  width: 330px;
+  margin: 10px auto 0 auto;
+}
+
+.clothing-type {
+  font-size: 0.6em;
+}
+
+.collection-name {
+  border-top: 1px solid black;
+
+}
+
+.collection-pic{
+  background: url('../assets/images/dash/nike.png') center;
+  margin: auto;
+  width: 300px;
+  height: 250px;
+}
+
+.collection-brand {
+  font-weight: 800;
+  font-style: italic;
+  font-size: 1.4em;
+}
+
+.collection-set {
+  font-size: 0.9em;
+}
+
+.collection-creator {
+  font-size: 0.7em;
+  margin-bottom: 40px;
+  font-style: italic;
+}
+
+.collection-type {
+  font-size: 0.7em;
+}
+
+.view-itinerary {
+  text-align: center;
+  padding: 5%;
+}
+
+.view-itinerary  button{
+  border: 1px solid black;
+  padding: 5px 10px;
+  background-color: transparent;
+}
+
+.orange {
+  color: #e86909;
+}
+
+

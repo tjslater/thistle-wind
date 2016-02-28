@@ -6,6 +6,11 @@ angular.module('thistleWindApp')
       .state('profile', {
         url: '/profile',
         templateUrl: 'app/profile/profile.html',
-        controller: 'ProfileCtrl'
+        controller: 'ProfileCtrl',
+        resolve: {
+          user: function($http, Auth){
+            return Auth.getCurrentUser();
+          }
+        }
       });
   });

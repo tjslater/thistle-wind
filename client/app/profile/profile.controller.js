@@ -1,6 +1,6 @@
 'use strict';
 
 angular.module('thistleWindApp')
-  .controller('ProfileCtrl', function ($scope, Auth, User) {
-    $scope.message = 'Hello';
+  .controller('ProfileCtrl', function ($scope, Auth, User, user) {
+    $scope.user = user;
   });
