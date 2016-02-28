@@ -1,16 +1,16 @@
 <div class="sidebar col-xs-3">
   <ul>
-    <li class="link text-uppercase"><a href="#" ui-sref="profile">my profile</a></li>
-    <li class="link text-uppercase active-link">my dash</li>
-    <li>
+    <li class="link text-uppercase" ng-class="{'active-link':profile}"><a href="#" ui-sref="profile">my profile</a></li>
+    <li class="link text-uppercase" ng-class="{'active-link':dash}"><a href="#" ui-sref="dash">my dash</a></li>
+    <li ng-show="dash">
       <ul>
-        <li class="sublink text-uppercase">next trip</li>
-        <li class="sublink text-uppercase active-link">upcoming trips</li>
-        <li class="sublink text-uppercase">my wardrobe</li>
+        <li class="sublink text-uppercase"><a href="#">next trip</a></li>
+        <li class="sublink text-uppercase"><a href="#">upcoming trips</a></li>
+        <li class="sublink text-uppercase"><a href="">my wardrobe</a></li>
       </ul>
     </li>
-    <li class="link text-uppercase">
+    <li class="link text-uppercase" ng-class="{'active-link': shopping}">
       <a href="#" ui-sref="shopping">fill suitcase</a>
     </li>
   </ul>
-</div>d
+</div>

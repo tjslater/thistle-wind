@@ -32,7 +32,6 @@ $fa-font-path: "../bower_components/font-awesome/fonts";
 @import '../components/footer/footer.scss';
 @import '../components/modal/modal.scss';
 @import '../components/oauth-buttons/oauth-buttons.scss';
-@import '../components/sidebar/sidebar.scss';
 // endinjector
 
 body {
@@ -48,6 +47,7 @@ a {
   color: black;
   text-decoration: none;
   cursor: pointer;
+  font-family: bebas !important;
 }
 
 a:hover, a:active {
@@ -56,7 +56,7 @@ a:hover, a:active {
 }
 
 .home {
-  background: url("../assets/images/mountains-nature-man-person.jpg") no-repeat center center;
+  background: url("../assets/images/mountainsnaturemanperson.jpg") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
