@@ -11,7 +11,9 @@
             <li class="sublink text-uppercase">my wardrobe</li>
           </ul>
         </li>
-        <li class="link text-uppercase">fill suitcase</li>
+        <li class="link text-uppercase">
+          <a href="#" ui-sref="shopping">fill suitcase</a>
+        </li>
       </ul>
     </div>
     <div class="dashview col-xs-9">
@@ -101,7 +103,7 @@
           </div>
         </div>
         <div class="view-itinerary">
-          <button>view full itinerary</button>
+          <button ui-sref="itinerary({id: trip._id})">view full itinerary</button>
         </div>
       </div>
 
