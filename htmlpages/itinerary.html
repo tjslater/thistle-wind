@@ -1,0 +1,246 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="itinerary.css">
+    </head>
+    <body ng-app="thistleApp">
+        <div class="navigation row">
+            <a href="#"><div class="link logo">LOGO</div></a>
+            <div class="links">
+                <a href="#"><div class="link">how it works</div></a>
+                <a href="#"><div class="link">collections</div></a>
+                <a href="#"><div class="link">lookbook</div></a>
+                <a href="#"><div class="link login">login</div></a>
+                <a data-toggle="modal" data-target="#registerModal"><div class="link registration">get started</div></a>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="it-intro">
+                <div class="it-intro-container">
+                    <div class="it-intro-blimp"></div>
+                    <p class="it-intro-text text-uppercase">a closer look at your next trip</p>
+                    <h1 class="it-intro-city text-uppercase">new york city</h1>
+                    <p class="it-intro-date">03.14.16-03.22.16</p>
+                    <hr class="it-line">
+                    <div class="intro-weather"></div>
+                </div>
+            </div>
+            <div class="it-itinerary">
+                <div class="it-itinerary-tabs">
+                    <ul class="it-tabs-tabs">
+                        <li class="it-tab text-uppercase">your itinerary</li>
+                        <li class="it-tab text-uppercase">my suitcase</li>
+                        <li class="it-tab text-uppercase">weather</li>
+                    </ul>
+                </div>
+
+                <div class="it-itinerary-info">
+                    <h1 class="it-main-title text-uppercase">your itinerary</h1>
+                    <p class="it-main-sub"> Trip details</p>
+
+                    <div class="it-info-container">
+                        <div class="it-info-content">
+                            <!-- <div class="row">
+                                <div class="col-xs-3 it-flights-events">
+                                    <div class="it-trip-flights">
+                                        <p class="it-flight-title">flights</p>
+                                        <hr>
+                                        <div class="row">
+                                            <p class="it-flight-date-text">date</p>
+                                            <div>
+                                                <div class="it-depart-icon"></div>
+                                                <p>to</p>
+                                                <p>SFO -> ARN</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="it-trip-events">
+                                        
+                                    </div>
+                                </div>
+                                <div class="col-xs-9 it-trip-info">
+                                    <div class="row">
+                                        <div class="col-xs-6 it-trip-city"></div>
+                                        <div class="col-xs-6 it-trip-weather"></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-3 it-trip-lodging"></div>
+                                        <div class="col-xs-9 it-trip-pic"></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-4 it-trip-cal"></div>
+                                        <div class="col-xs-8 it-trip-reminder"></div>
+                                    </div>
+                                </div>
+                            </div> -->
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="suitcase">
+                    <div class="suitcase-container">
+                        <div class="suitcase-icon"></div>
+                        <div class="suitcase-title"><p  class="text-uppercase">your suitcase</p></div>
+                        <div class="row">
+                            <div class="col-xs-3 suitcase-count">
+                                <p class="text-uppercase suitcase-count-title">item count</p>
+                                <ul class="suitcase-list">
+                                    <li class="suitcase-list-row">
+                                        <div class="row">
+                                            <div class="col-xs-10 suitcase-list-item">Pants</div>
+                                            <div class="col-xs-2 suitcase-list-count">4</div>
+                                        </div>
+                                    </li>
+                                    <li class="suitcase-list-row">
+                                        <div class="row">
+                                            <div class="col-xs-10 suitcase-list-item">T-Shirts</div>
+                                            <div class="col-xs-2 suitcase-list-count">8</div>
+                                        </div>
+                                    </li>
+                                    <li class="suitcase-list-row">
+                                        <div class="row">
+                                            <div class="col-xs-10 suitcase-list-item">Shirts</div>
+                                            <div class="col-xs-2 suitcase-list-count">3</div>
+                                        </div>
+                                    </li>
+                                    <li class="suitcase-list-row">
+                                        <div class="row">
+                                            <div class="col-xs-10 suitcase-list-item">Sweaters</div>
+                                            <div class="col-xs-2 suitcase-list-count">3</div>
+                                        </div>
+                                    </li>
+                                    <li class="suitcase-list-row">
+                                        <div class="row">
+                                            <div class="col-xs-10 suitcase-list-item">Jackets</div>
+                                            <div class="col-xs-2 suitcase-list-count">2</div>
+                                        </div>
+                                    </li>
+                                    <li class="suitcase-list-row">
+                                        <div class="row">
+                                            <div class="col-xs-10 suitcase-list-item">Shoes</div>
+                                            <div class="col-xs-2 suitcase-list-count">8</div>
+                                        </div>
+                                    </li>
+                                    <li class="suitcase-list-row">
+                                        <div class="row">
+                                            <div class="col-xs-10 suitcase-list-item">Socks</div>
+                                            <div class="col-xs-2 suitcase-list-count">3</div>
+                                        </div>
+                                    </li>
+                                    <li class="suitcase-list-row">
+                                        <div class="row">
+                                            <div class="col-xs-10 suitcase-list-item">Accessories</div>
+                                            <div class="col-xs-2 suitcase-list-count">4</div>
+                                        </div>
+                                    </li>
+                                    <li class="suitcase-list-row">
+                                        <div class="row">
+                                            <div class="col-xs-10 suitcase-list-item">Total</div>
+                                            <div class="col-xs-2 suitcase-list-count">33</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-xs-6">
+                                <div class="suitcase-full-collection">
+                                    <p class="suitcase-collection-title text-uppercase">the upperwest collection</p>
+                                    <p class="suitcase-collection-sub">Created by <span style="color:orange">ClothesCall</span></p>
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                            <div class="suitcase-display">
+                                                <div class="suitcase-display-pic nike"></div>
+                                                <div class="row">
+                                                    <div class="col-xs-7 suitcase-display-brand">
+                                                        <p class="suitcase-display-brand">nike</p>
+                                                        <p class="suitcase-display-type">casual</p>
+                                                    </div>
+                                                    <div class="col-xs-5 suitcase-display-rating"></div>
+                                                </div>
+                                                <hr>
+                                                <div class="row">
+                                                    <div class="col-xs-10 suitcase-display-collection-name">the nether collection</div>
+                                                    <div class="col-xs-2 suitcase-display-collection-cloud3"></div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <div class="suitcase-display">
+                                                <div class="suitcase-display-pic zara"></div>
+                                                <div class="row">
+                                                    <div class="col-xs-7 suitcase-display-brand">
+                                                        <p class="suitcase-display-brand">zara</p>
+                                                        <p class="suitcase-display-type">casual</p>
+                                                    </div>
+                                                    <div class="col-xs-5 suitcase-display-rating"></div>
+                                                </div>
+                                                <hr>
+                                                <div class="row">
+                                                    <div class="col-xs-10 suitcase-display-collection-name">the nether collection</div>
+                                                    <div class="col-xs-2 suitcase-display-collection-cloud2 "></div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="suitcase-full-collection">
+                                    <p class="suitcase-collection-title text-uppercase">the learned man collection</p>
+                                    <p class="suitcase-collection-sub">Created by Topo Clothing Co.</p>
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                            <div class="suitcase-display">
+                                                <div class="suitcase-display-pic muji"></div>
+                                                <div class="row">
+                                                    <div class="col-xs-7 suitcase-display-brand">
+                                                        <p class="suitcase-display-brand">muji</p>
+                                                        <p class="suitcase-display-type">casual</p>
+                                                    </div>
+                                                    <div class="col-xs-5 suitcase-display-rating"></div>
+                                                </div>
+                                                <hr>
+                                                <div class="row">
+                                                    <div class="col-xs-10 suitcase-display-collection-name">the nether collection</div>
+                                                    <div class="col-xs-2 suitcase-display-collection-cloud3"></div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <div class="suitcase-display">
+                                                <div class="suitcase-display-pic uniqlo"></div>
+                                                <div class="row">
+                                                    <div class="col-xs-7 suitcase-display-brand">
+                                                        <p class="suitcase-display-brand">uniqlo</p>
+                                                        <p class="suitcase-display-type">casual</p>
+                                                    </div>
+                                                    <div class="col-xs-5 suitcase-display-rating"></div>
+                                                </div>
+                                                <hr>
+                                                <div class="row">
+                                                    <div class="col-xs-10 suitcase-display-collection-name">the nether collection</div>
+                                                    <div class="col-xs-2 suitcase-display-collection-cloud2 "></div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </body>
+    <script src="js/jquery-2.2.0.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+</html>
+

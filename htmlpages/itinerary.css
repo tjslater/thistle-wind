@@ -1,0 +1,248 @@
+.it-intro {
+    background: url('assets/images/brooklynbridge.jpeg');
+    padding: 100px 100px 0 100px;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.it-intro-blimp {
+    background: url('assets/images/blimp.png') no-repeat center;
+    background-size: contain;
+    width: 160px;
+    height: 80px; 
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.it-intro-container {
+    text-align: center;
+    background-color: white;
+    padding-top: 50px;
+}
+
+.it-intro-text {
+    color: orange;
+    font-size: 0.8em;
+}
+
+.intro-weather {
+    background: url('assets/images/weather.png') no-repeat;
+    background-size: cover;
+    height: 50px;
+    width: 150px;
+    margin: 20px auto;
+}
+
+.it-intro-city {
+    margin-top: 0;
+    font-size: 3.3em;
+    font-weight: 200;
+}
+
+.it-intro-date {
+    font-style: italic; 
+}
+
+.it-line {
+    width: 340px;
+    background-color: black;
+    height: 1px;
+}
+.it-itinerary-tabs {
+    /*background: gray;*/
+    padding: 40px 0 20px 0;
+    border-bottom: 1px solid silver;
+    border-top: 1px solid silver;
+}
+
+.it-tabs-tabs {
+    margin: auto;
+    text-align: center;
+    padding: 0;
+}
+
+.it-tab {
+    display: inline-block;
+    text-align: left;
+    border-top: silver 1px solid;
+    width: 200px;
+    padding: 7px 0;
+}
+
+.it-itinerary-info {
+    text-align: center;
+}
+
+.it-main-title {
+    font-size: 2.2em;
+    letter-spacing: 0.2em;
+    font-weight: 300;
+    padding-top: 50px;
+}
+
+.it-main-sub {
+    font-size: 1em;
+    padding-bottom: 50px;
+}
+
+.it-info-container {
+    padding: 50px 100px;
+    background: url('assets/images/itinerary_bg.png') repeat;
+
+}
+.it-info-content {
+    border: 1px solid silver;
+    height: 750px;
+    width: 100%;
+    background: url('assets/images/it.png');
+    background-size: cover;
+}
+.it-flight-title{
+    text-align: left;
+}
+.it-flight-date-text {
+    text-align: left;
+    padding-left: 50px;
+}
+.suitcase {
+    padding: 150px;
+}
+.suitcase-container {
+
+}
+
+.suitcase-icon {
+    background: url('assets/images/clotheshangar.png') no-repeat;
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+    margin: 30px auto;
+
+}
+
+.suitcase-content {
+
+}
+
+.suitcase-title {
+    padding-top: 15px;
+    font-size: 2em;
+    letter-spacing: 0.3em;
+    text-align: center;
+    border-top: 2px solid black;
+    border-bottom: 1px solid black;
+}
+
+.suitcase-collection-title {
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: 300;
+    padding-top: 30px;
+}
+
+.suitcase-collection-sub {
+    text-align: center;
+    font-weight: 200;
+    font-size: 0.8em;
+    padding-bottom: 50px;
+}
+
+.suitcase-count-title {
+    font-size: 1.3em;
+    letter-spacing: 0.2em;
+    padding-top: 140px;
+}
+
+.suitcase-list {
+    list-style: none;
+    padding: 0;
+}
+
+.suitcase-list-row {
+    padding: 10px 0;
+    border-top: 1px solid black;
+}
+.suitcase-list-row:first-child {
+    border-top: none;
+}
+.suitcase-list-row:last-child {
+    border-top: 3px solid black;
+}
+
+.suitcase-list-item {
+    font-style: italic;
+}
+
+.suitcase-list-count {
+
+}
+
+.suitcase-display {
+    width: 270px;
+}
+
+.suitcase-display-pic {
+    width: 270px;
+    height: 200px;
+}
+
+.suitcase-display-brand {
+    font-style: italic;
+    font-size: 1.3em;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.suitcase-display-type {
+    font-style: italic;
+    font-size: 0.6em;
+    font-weight: 300;
+}
+
+.suitcase-display-collection-name {
+    font-size: 0.8em;
+}
+
+.suitcase-display-rating {
+    height: 50px;
+    width: 100px;
+    background: url('assets/images/stars.png') no-repeat center center;
+    background-size: contain;
+}
+
+.suitcase-display-collection-cloud2 {
+    height: 20px;
+    width: 20px;
+    background: url('assets/images/cloud2.png') no-repeat center center;
+    background-size: contain;
+}
+
+.suitcase-display-collection-cloud3 {
+    height: 20px;
+    width: 20px;
+    background: url('assets/images/cloud3.png') no-repeat center center;
+    background-size: contain;
+}
+
+.nike {
+    background: url('assets/images/nike.png') no-repeat center center;
+    background-size: cover;
+
+}
+
+.zara {
+    background: url('assets/images/professor.png') no-repeat center center;
+    background-size: cover;
+}
+
+.muji {
+    background: url('assets/images/0629jason.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.uniqlo {
+    background: url('assets/images/socks.jpg') no-repeat center center;
+    background-size: cover;
+}
