@@ -1,0 +1,305 @@
+.searchbar {
+    border: 1px solid black;
+    margin: 30px 100px 30px 50px;
+}
+
+.searchinput {
+    width: 100%;
+    padding: 0 0 0 20px;
+    line-height: 40px;
+    border: none;
+    border-left: 1px solid silver;
+}
+
+.choose-brand {
+    height: 40px;
+    ba
+}
+
+.brand-selection {
+    height: 40px;
+    width: 90%;
+    border: none;
+    padding-left: 10px;
+    letter-spacing: 0.1em;
+    background: url('assets/images/dropdown_lg.png') no-repeat right;
+    background-size: 4%;
+    padding-right: 20px;
+    -webkit-appearance: none;
+}
+
+.brand-option {
+    height: 40px;
+    padding: 10px;
+}
+
+.title-pic-trending-icon {
+    width: 60px;
+    height: 60px;
+    background-size: cover;
+    margin: 20px auto;
+}
+
+.dapper {
+    background: url('assets/images/dapper.png') center center no-repeat;
+}
+
+.shirt {
+    background: url('assets/images/shirt.png') center center no-repeat;
+}
+
+.col-xs-2.browse-text {
+    border-right: 1px solid black;
+    line-height: 40px;
+    background-color: #E28B68;
+    color: white;
+    font-size: 1.3em;
+    font-style: italic;
+
+}
+
+.orange-text {
+    color: #B54222;
+}
+
+
+.col-xs-5.choose-brand, .col-xs-5.search-clothes {
+    padding: 0;
+}
+
+.trending-icon {
+    background: url('assets/images/clotheshangar.png') no-repeat;
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+    margin: 30px auto;
+}
+
+.trending-content {
+
+}
+
+.trending-title {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1.2em;
+    letter-spacing: 0.3em;
+    text-align: center;
+    border-top: 2px solid black;
+    border-bottom: 1px solid black;
+}
+
+.trending-title-tees {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 50px;
+    font-size: 1.2em;
+    letter-spacing: 0.3em;
+    text-align: center;
+    border-top: 2px solid black;
+    border-bottom: 1px solid black;
+}
+
+
+.trending-collection {
+    position: relative;
+}
+
+.cloud-cart{
+    position: fixed;
+    width: 100px;
+    top: 300px;
+    right: 80px;
+}
+
+.cloud-text {
+    font-size: 0.7em;
+}
+
+.cart {
+    background: url('assets/images/dropcloud.png');
+    background-size: cover;
+    width: 100px;
+    height: 53px;
+}
+
+
+.trending-collection-title {
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: 300;
+    padding-top: 30px;
+}
+
+.trending-collection-sub {
+    text-align: center;
+    font-weight: 200;
+    font-size: 0.8em;
+    padding-bottom: 50px;
+}
+
+.trending-display {
+    width: 230px;
+}
+
+.trending-display-pic {
+    width: 230px;
+    height: 140px;
+    position: relative;
+}
+
+.trending-display-brand {
+    font-style: italic;
+    font-size: 1.3em;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.trending-display-type {
+    font-style: italic;
+    font-size: 0.6em;
+    font-weight: 300;
+}
+
+.trending-display-collection-name {
+    font-size: 0.8em;
+}
+
+.trending-display-rating {
+    height: 50px;
+    width: 100px;
+    background: url('assets/images/stars.png') no-repeat center center;
+    background-size: contain;
+}
+
+.trending-display-collection-cloud2 {
+    height: 20px;
+    width: 20px;
+    background: url('assets/images/cloud2.png') no-repeat center center;
+    background-size: contain;
+}
+
+.trending-display-collection-cloud3 {
+    height: 20px;
+    width: 20px;
+    background: url('assets/images/cloud3.png') no-repeat center center;
+    background-size: contain;
+}
+
+.trending {
+    margin: 50px 20px;
+}
+
+.img-size {
+    height: 100%;
+    width: 100%;
+}
+
+.mtn {
+    background: url('assets/images/mtnman.png') no-repeat center center;
+    background-size: cover;
+
+}
+
+.see-more {
+    padding: 20px 80px 0 0;
+}
+
+.see-link, .see-link:hover, .see-link:active, .see-link:visited{
+    color: orange;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.trending-tees {
+    padding: 80px 0 0 0;
+}
+
+.tees-title {
+    padding: 0 30px 0 0;
+}
+
+.trending-clothing-pic {
+    width: 135px;
+    height: 140px;
+    margin: auto;
+    background-color: gray;
+}
+
+.quick-text {
+    font-size: 0.7em;
+    letter-spacing: -0.1em;
+}
+
+.magnify {
+    height: 15px;
+    width: 15px;
+    margin: 8px 10px 0 10px;
+}
+
+.quick-look {
+    line-height: 30px;
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    bottom: 0;
+}
+
+.red-transparent {
+    background-color: rgba(125, 37, 20, 0.5);
+}
+
+.red-transparent:hover {
+    background-color: rgba(125, 37, 20, 0.8);
+}
+
+.black-transparent {
+    background-color: rgba(52, 60, 64, 0.5);
+}
+
+.black-transparent:hover {
+    background-color: rgba(52, 60, 64, 0.8);
+}
+
+.trending-large-pic {
+    padding-right: 42px;
+    padding-left: 0px;
+}
+
+.trending-clothing-pic-large {
+    width: 100%;
+    height: 310px;
+    background-color: gray;
+}
+
+.trending-clothing-text{
+    text-align: right;
+    font-size: 0.7em;
+    font-style: italic;
+
+}
+
+.t1 {
+    background: url('assets/images/t1.png') center center;
+    background-size: cover;
+}
+
+.t2 {
+    background: url('assets/images/t2.png') center center;
+    background-size: cover;
+}
+
+.t3 {
+    background: url('assets/images/t3.png') center center;
+    background-size: cover;
+}
+
+.t4 {
+    background: url('assets/images/t4.png') center center;
+    background-size: cover;
+}
+
+.t5 {
+    background: url('assets/images/t5.png') center center;
+    background-size: cover;
+}
