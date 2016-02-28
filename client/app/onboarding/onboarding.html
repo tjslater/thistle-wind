@@ -1,1 +1,57 @@
-<div>This is the onboarding view.</div>
+<div class="container-fluid content start">
+  <div class="row page">
+    <div class="title col-xs-1 text-uppercase">get started</div>
+    <div class="col-xs-11 hr-line"></div>
+  </div>
+  <div class="row">
+    <div class="box-deco"></div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-3 profile">
+      <div class="row">
+        <div class="text-uppercase title col-xs-4">profile libs</div>
+        <div class="col-xs-8 hr-line"></div>
+      </div>
+
+      <div class="description">
+        <p ng-repeat="choice in choices" ng-show="choice.selected">
+          {{choice.text}}
+        </p>
+      </div>
+    </div>
+    <div class="col-xs-offset-1 col-xs-8 gallery">
+      <div class="title text-uppercase">show us the real you /</div>
+      <div class="sub-text">Select all that tickles your fancy.</div>
+      <div class="clothes">
+        <div ng-repeat="choice in choices track by $index" ng-click="select($index)">
+          <div ng-show="choice.bgs && choice.selected" class="bgColor" ng-repeat="bg in choice.bgs track by $index" id="{{bg}}"></div>
+          <div class="outfit" id="outfit{{$index+1}}"></div>
+
+          <div class="overlay" ng-show="choice.overlay" id="{{choice.overlay.id}}">
+            <div class="deco row">
+              <div class="line col-xs-12"></div>
+              <div class="box col-xs-12"></div>
+              {{choice.overlay.text}}
+            </div>
+          </div>
+        </div>
+
+
+
+
+        <div class="next-step container-fluid">
+          <div class="title row">
+            Now go on an adventure!
+          </div>
+          <div class="row deco">
+            <div class="col-xs-5 box"></div>
+            <div class="col-xs-10 line"></div>
+            <button ui-sref="dash" ng-disabled="selected.length > 0">go</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
