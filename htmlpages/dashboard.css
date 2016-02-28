@@ -1,12 +1,16 @@
 .sidebar {
-    padding: 5% 0 0 7%;
-    background: silver;
     height: 100%;
+    background: silver;
     font-size: 1em;
 }
 
 .sidebar ul {
     list-style-type: none;
+}
+
+.dashboard {
+    /*height: 100%;*/
+    position: relative;
 }
 
 .sidebar .link, .sidebar .sublink{
@@ -18,45 +22,47 @@
 }
 
 .dashview {
-    height: 80vh;
+    /*height: 100%;*/
     padding: 3% 9% 0 1%;
+    display: inline-block;
 }
 
 .hrz-line {
 }
 
-.panel-title .city-name {
-    padding-left: 10%;
-    line-height: 30px;
+.trip {
+    height: 45px;
+    padding:;
+    border: 1px solid black;
+    overflow: hidden;
 }
 
-.date {
-    line-height: 30px;
+.trip.active {
+    height: auto;
 }
 
-.collapse-button, .collapse-button:visited, .collapse-button:hover, .collapsed-button:active {
-    color: black;
-    text-decoration: none;
-    line-height: 30px;
+.trip-info {
+    height: 45px;
 }
 
-.panel-default > .panel-heading {
-    background: transparent;
+.trip-info .city-name {
+    line-height: 45px;
 }
 
-.panel-group .panel + .panel {
-    margin-top: 0;
+.trip-info .collapse-button {
+    line-height: 45px;
+}
+
+.trip + .trip {
     border-top: 0;
 }
 
-.panel-group .panel {
-    border-radius: 0;
-    border: 1px black solid;
+.date {
+    line-height: 45px;
 }
 
-.panel-body {
-    padding: 0;
-}
+
+
 .weather-widget {
     background: url('assets/images/brooklynbridge.jpeg') no-repeat center center;
     -webkit-background-size: cover;
@@ -90,7 +96,7 @@
 }
 
 .wardrobe {
-    margin: 35px auto;
+    margin: 35px auto 20px auto;
     padding: 20px 0;
     width: 80%;
     text-align: center;
@@ -98,3 +104,90 @@
     border-bottom: 2px solid black;
     letter-spacing: 0.4em;
 }
+
+.inventory {
+    margin: auto;
+    width: 80%;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+.inventory-title {
+    font-size: 0.8em;
+    font-weight: 900;
+    border-right: 1px solid silver;
+}
+
+.num-clothes {
+    margin: 0;
+    font-size: 2em;
+}
+
+.collection-icon {
+    width: 50px;
+    height: 50px;
+}
+
+.clothes-collection .row {
+    width: 200px;
+    margin: auto;
+}
+
+.clothes-collection .row{
+
+    width: 330px;
+    margin: 10px auto 0 auto;
+}
+
+.clothing-type {
+    font-size: 0.6em;
+}
+
+.collection-name {
+    border-top: 1px solid black;
+    
+}
+
+.collection-pic{
+    background: url('assets/images/collection.png') center;
+    margin: auto;
+    width: 300px;
+    height: 250px;
+}
+
+.collection-brand {
+    font-weight: 800;
+    font-style: italic;
+    font-size: 1.4em;
+}
+
+.collection-set {
+    font-size: 0.9em;
+}
+
+.collection-creator {
+    font-size: 0.7em;
+    margin-bottom: 40px;
+    font-style: italic;
+}
+
+.collection-type {
+    font-size: 0.7em;
+}
+
+.view-itinerary {
+    text-align: center;
+    padding: 5%;
+}
+
+.view-itinerary  button{
+    border: 1px solid black;  
+    padding: 5px 10px;  
+    background-color: transparent;
+}
+
+.orange {
+    color: #e86909;
+}
+
+

@@ -1,0 +1,145 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="dashboard.css">
+    </head>
+    <body ng-app="thistleApp">
+        <div class="navigation row">
+            <a href="#"><div class="link logo">LOGO</div></a>
+            <div class="links">
+                <a href="#"><div class="link">how it works</div></a>
+                <a href="#"><div class="link">collections</div></a>
+                <a href="#"><div class="link">lookbook</div></a>
+                <a href="#"><div class="link login">login</div></a>
+                <a data-toggle="modal" data-target="#registerModal"><div class="link registration">get started</div></a>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="dashboard row">
+                <div class="sidebar col-xs-3">
+                    <ul>
+                        <li class="link text-uppercase">my profile</li>
+                        <li class="link text-uppercase active-link">my dash</li>
+                        <li>
+                            <ul>
+                                <li class="sublink text-uppercase">next trip</li>
+                                <li class="sublink text-uppercase active-link">upcoming trips</li>
+                                <li class="sublink text-uppercase">my wardrobe</li>
+                            </ul>
+                        </li>
+                        <li class="link text-uppercase">fill suitcase</li>
+                    </ul>
+                </div>
+                <div class="dashview col-xs-9">
+                    <div class="hrz-line"></div>
+                    <div class="page-title text-uppercase">my dashboard</div>
+                    <div class="decoration-box"></div>
+                    <div class="dash-title text-uppercase">upcoming trips at a glance/</div>
+
+                    <div class="trip active">
+                        <div class="row">
+                            <div class="col-xs-offset-1 col-xs-8 trip-info"><span class="city-name text-uppercase">san francisco</span></div>
+                            <div class=" col-xs-2 trip-info"><span class="date">01.01.16-01.04.16</span></div>
+                            <div class="col-xs-1 trip-info"><a class="collapse-button">+</a></div>
+                        </div>
+                        <div class="row">
+                            <div class="weather-widget">
+                                <div class="weather">
+                                    <p class="city-name text-center text-uppercase">new york city</p>
+                                    <p class="weather-date text-center">01.01.16-01.04.16</p>
+                                    <hr>
+                                    <div class="weather-info">
+                                        <img src="assets/images/weather.png"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="wardrobe text-uppercase">
+                                your wardrobe is empty
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="trip active">
+                        <div class="row">
+                            <div class="col-xs-offset-1 col-xs-8 trip-info"><span class="city-name text-uppercase">san francisco</span></div>
+                            <div class=" col-xs-2 trip-info"><span class="date">01.01.16-01.04.16</span></div>
+                            <div class="col-xs-1 trip-info"><a class="collapse-button">+</a></div>
+                        </div>
+                        <div class="row">
+                            <div class="weather-widget">
+                                <div class="weather">
+                                    <p class="city-name text-center text-uppercase">new york city</p>
+                                    <p class="weather-date text-center">01.01.16-01.04.16</p>
+                                    <hr>
+                                    <div class="weather-info">
+                                        <img src="assets/images/weather.png"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wardrobe text-uppercase">
+                                your new york city wardrobe
+                        </div>
+                        <div class="inventory ">
+                            <div class="row">
+                                <div class="col-xs-2 inventory-title"><p class=" text-uppercase">inventory overview</p></div>
+                                <div class="col-xs-2">
+                                    <p class="num-clothes">5</p><p class="clothing-type text-uppercase">bottoms</p>
+                                </div>
+                                <div class="col-xs-2">
+                                    <p class="num-clothes">8</p><p class="clothing-type text-uppercase">tees</p>
+                                </div>
+                                <div class="col-xs-2">
+                                    <p class="num-clothes">4</p><p class="clothing-type text-uppercase">shirts</p>
+                                </div>
+                                <div class="col-xs-2">
+                                    <p class="num-clothes">2</p><p class="clothing-type text-uppercase">jackets</p>
+                                </div>
+                                <div class="col-xs-2"> > </div>
+                            </div>
+                        </div>
+
+                        <div class="collections">
+                            <div class="collection-icon"></div>
+                            <p class="collection-set text-uppercase text-center">the brooklyn bridge collection</p>
+                            <p class="collection-creator text-capitalize text-center">created by <span class="orange">ClothesCall</span></p>
+                            <div class="row">
+                                <div class="col-xs-5 col-xs-offset-1 clothes-collection">
+                                    <div class="collection-pic"></div>
+                                    <div class="row">
+                                        <div class="col-xs-8 "><p class="collection-brand">nike</p><p class="collection-type">casual</p></div>
+                                        <div class="col-xs-4 collection-rating"></div>
+                                        <div class="col-xs-10"><p class="collection-name">the nether collection</p></div>
+                                        <div class="col-xs-4"><p class="collection-cloud"></p></div>
+
+                                    </div>
+                                </div>
+                                <div class="col-xs-5 clothes-collection">
+                                    <div class="collection-pic"></div>
+                                    <div class="row">
+                                        <div class="col-xs-8 "><p class="collection-brand">zara</p><p class="collection-type">casual</p></div>
+                                        <div class="col-xs-4 collection-rating"></div>
+                                        <div class="col-xs-10"><p class="collection-name">the nether collection</p></div>
+                                        <div class="col-xs-4"><p class="collection-cloud"></p></div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="view-itinerary">
+                            <button >view full itinerary</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+    <script src="js/jquery-2.2.0.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+</html>
